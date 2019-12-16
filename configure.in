@@ -29,7 +29,7 @@ dnl --------------------------------------------------
 dnl Check for programs
 dnl --------------------------------------------------  
 
-dnl save $CFLAGS since AC_PROG_CC likes to insert "-g -O2"
+dnl save $CFLAGS since AC_PROG_CC likes to insert "-g -O3"
 dnl if $CFLAGS is blank
 cflags_save="$CFLAGS"
 AC_PROG_CC
@@ -62,13 +62,13 @@ else
         case $host in 
         arm-*-*)
                 DEBUG="-g -Wall -D__NO_MATH_INLINES -fsigned-char -D_ARM_ASSEM_"
-                CFLAGS="-O2 -D_ARM_ASSEM_ -fsigned-char"
-                PROFILE="-W -pg -g -O2 -D_ARM_ASSEM_ -fsigned-char -fno-inline-functions";;
+                CFLAGS="-O3 -D_ARM_ASSEM_ -fsigned-char"
+                PROFILE="-W -pg -g -O3 -D_ARM_ASSEM_ -fsigned-char -fno-inline-functions";;
 
         *)
                 DEBUG="-g -Wall -D__NO_MATH_INLINES -fsigned-char"
-                CFLAGS="-O2 -Wall -fsigned-char"
-                PROFILE="-Wall -pg -g -O2 -fsigned-char -fno-inline-functions";;
+                CFLAGS="-O3 -Wall -fsigned-char"
+                PROFILE="-Wall -pg -g -O3 -fsigned-char -fno-inline-functions";;
         esac
 fi
 CFLAGS="$CFLAGS $cflags_save -D_REENTRANT"
