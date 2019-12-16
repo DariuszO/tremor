@@ -1,23 +1,23 @@
 <html>
 
 <head>
-<title>Tremor - Build</title>
+<title>tremor - Build</title>
 <link rel=stylesheet href="style.css" type="text/css">
 </head>
 
 <body bgcolor=white text=black link="#5555ff" alink="#5555ff" vlink="#5555ff">
 <table border=0 width=100%>
 <tr>
-<td><p class=tiny>Tremor documentation</p></td>
-<td align=right><p class=tiny>Tremor version 1.0 - 20020403</p></td>
+<td><p class=tiny>tremor documentation</p></td>
+<td align=right><p class=tiny>tremor version 1.0 - 20020403</p></td>
 </tr>
 </table>
 
-<h1>Tremor: Building libvorbisidec</h1>
+<h1>tremor: Building libvorbisidec</h1>
 
 <p>
 
-The C source in the Tremor package will build on any ANSI C compiler
+The C source in the tremor package will build on any ANSI C compiler
 and function completely and properly on any platform.  The included
 build system assumes GNU build system and make tools (m4, automake,
 autoconf, libtool and gmake).  GCC is not required, although GCC is
@@ -65,12 +65,12 @@ simple example program, ivorbisfile_example.c, can be built with 'make
 ivorbisfile_example'.
 <p>
 (We've summarized <a href="diff.html">differences between the free,
-reference vorbisfile library and Tremor's libvorbisidec in a separate
+reference vorbisfile library and tremor's libvorbisidec in a separate
 document</a>.)
 
 <h3>Notes</h3>
 
-<p>Tremor requires a native 64 bit integer type to compile and
+<p>tremor requires a native 64 bit integer type to compile and
 function; The GNU build system will locate and typedef
 <tt>ogg_int64_t</tt> to the appropriate native type.  If not using the
 GNU build tools, you will need to define <tt>ogg_int64_t</tt> as a
@@ -85,8 +85,8 @@ for example, this should be defined as <tt>__int64</tt>.
 <td><p class=tiny>copyright &copy; 2002 Xiph.org</p></td>
 <td align=right><p class=tiny><a href="http://www.xiph.org/ogg/vorbis/">Ogg Vorbis</a></p></td>
 </tr><tr>
-<td><p class=tiny>Tremor documentation</p></td>
-<td align=right><p class=tiny>Tremor version 1.0 - 20020403</p></td>
+<td><p class=tiny>tremor documentation</p></td>
+<td align=right><p class=tiny>tremor version 1.0 - 20020403</p></td>
 </tr>
 </table>
 
